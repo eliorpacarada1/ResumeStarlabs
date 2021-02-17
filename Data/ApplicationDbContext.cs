@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CvAlternative.Models;
 
 namespace CvAlternative.Data
 {
@@ -12,5 +13,6 @@ namespace CvAlternative.Data
             : base(options)
         {
         }
+        public DbSet<CvAlternative.Models.User> User { get; set; }
     }
 }
