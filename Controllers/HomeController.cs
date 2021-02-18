@@ -1,11 +1,8 @@
 ﻿using CvAlternative.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace CvAlternative.Controllers
 {
@@ -27,6 +24,12 @@ namespace CvAlternative.Controllers
         {
             return View();
         }
+        
+        public IActionResult HomePage()
+        {
+            return View(); 
+        }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
